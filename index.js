@@ -1,3 +1,10 @@
-let nomeHeroi = "Percy"
-const idade = 20
-let tipo = "Semideus"
+class heroi{
+    constructor (nome, idade, tipo) {
+    this.nome = "Percy"
+    this.idade = 18
+    this.tipo = "Semideus"
+    }
+    armas (){
+        ["espadas, poderes"]
+    }
+}
