@@ -8,3 +8,5 @@ class heroi{
         ["espadas, poderes"]
     }
 }
+
+console.log (heroi)
