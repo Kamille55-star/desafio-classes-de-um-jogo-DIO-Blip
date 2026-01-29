@@ -1,12 +1,13 @@
 class heroi{
     constructor (nome, idade, tipo) {
-    this.nome = "Percy"
-    this.idade = 18
-    this.tipo = "Semideus"
-    }
-    armas (){
-        ["espadas, poderes"]
+    this.nome = nome
+    this.idade = idade
+    this.tipo = tipo
     }
 }
 
-console.log (heroi)
+let percy = new heroi ("Percy", 18, "Semideus")
+
+console.log (percy)
+
+let armasPercy = ["espada Contracorrente" , "Poderes"]
