@@ -1,13 +1,19 @@
-class heroi{
-    constructor (nome, idade, tipo) {
+class heroi {
+  constructor(nome, idade, tipo, armas) {
     this.nome = nome
     this.idade = idade
     this.tipo = tipo
-    }
+    this.armas = armas
+  }
+
+  ataque() {
+    console.log(`${this.nome} atacou usando: ${this.armas}`)
+  }
 }
 
-let percy = new heroi ("Percy", 18, "Semideus")
+let armasPercy = ["Espada Contracorrente", "Poderes"]
 
-console.log (percy)
+let percy = new heroi("Percy", 18, "Semideus", armasPercy)
 
-let armasPercy = ["espada Contracorrente" , "Poderes"]
+console.log(percy)   // mostra a class toda
+percy.ataque()       // mostra o ataque
