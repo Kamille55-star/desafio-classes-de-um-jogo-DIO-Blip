@@ -31,12 +31,22 @@ class heroi {
 
 let percy = new heroi("Percy", 18, "Poseidon")
 
-percy.atacar()
+
+let annabeth = new heroi ("Annabeth", 18 , "Athena" )
 
 
+let nico = new heroi("Nico", 18, "Hades")
 
 
-let annabeth = new heroi ("Annabeth" , 18 , "Athena" )
+let will = new heroi("Will", 18, "Apolo")
 
-annabeth.atacar()
+
+let leo = new heroi("Leo", 18, "Hefesto")
+
+let herois = [percy, annabeth, nico, will, leo]
+
+for (let h of herois) {
+  h.atacar()
+}
+
 
