@@ -17,3 +17,7 @@ let percy = new heroi("Percy", 18, "Semideus", armasPercy)
 
 console.log(percy)   // mostra a class toda
 percy.ataque()       // mostra o ataque
+armasAnnabeth = ["Adaga", " planejamento e inteligência"]
+let annabeth = new heroi ("Annabeth" , 18 , "Semideus" , armasAnnabeth)
+console.log (annabeth)
+annabeth.ataque()
