@@ -1,32 +1,42 @@
 class heroi {
-  constructor(nome, idade, tipo, armas) {
+  constructor(nome, idade, cabana, armas) {
     this.nome = nome
     this.idade = idade
-    this.tipo = tipo
+    this.cabana = cabana
     this.armas = armas
   }
 
-  ataque() {
-    console.log(`${this.nome} atacou usando: ${this.armas}`)
+  atacar() {
+    let ataque = ""
+    if (this.cabana === "Poseidon"){
+      ataque = "poderes de água e furacão"
+    }
+    else if (this.cabana ==="Athena"){
+      ataque = "planejamento e estratégia"
+    }
+    else if (this.cabana === "Hades"){
+      ataque = "poderes das sombras, invocar mortos"
+    }
+    else if (this.cabana === "Apolo"){
+      ataque = "poderes de se iluminar e cegar inimigo"
+    }
+    else if (this.cabana === "Hefesto"){
+      ataque = "poderes de fogo"
+    }
+    console.log(`o/a ${this.nome} do chalé de ${this.cabana} atacou usando ${ataque}`)
   }
 }
 
-let armasPercy = "Contracorrente e poderes"
+ 
 
-let percy = new heroi("Percy", 18, "Semideus", armasPercy)
+let percy = new heroi("Percy", 18, "Poseidon")
 
-console.log(percy)   // mostra a class toda
-percy.ataque()
-armasAnnabeth = "Adaga, planejamento e inteligência"
-let annabeth = new heroi ("Annabeth" , 18 , "Semideus" , armasAnnabeth)
-console.log (annabeth)
-annabeth.ataque()
+percy.atacar()
 
-//se mago -> no ataque exibir (usou magia)
-//se guerreiro -> no ataque exibir (usou espada)
-//se monge -> no ataque exibir (usou artes marciais)
-//se ninja -> no ataque exibir (usou shuriken)
 
-//if (heroi) {
 
-//}
+
+let annabeth = new heroi ("Annabeth" , 18 , "Athena" )
+
+annabeth.atacar()
+
